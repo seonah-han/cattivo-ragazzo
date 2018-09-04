@@ -1,0 +1,35 @@
+.invisible {
+    opacity: 0;
+    visibility: hidden;
+    border: 0 solid #fff
+}
+
+.visible {
+    -webkit-transition: opacity .4s cubic-bezier(0, .95, 1, .955);
+    transition: opacity .4s cubic-bezier(0, .95, 1, .955);
+    -webkit-animation: flyin .4s ease forwards;
+    animation: flyin .4s ease forwards;
+    /*animation-delay: 2s;*/
+}
+
+@-webkit-keyframes flyin {
+    0% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px)
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+
+@keyframes flyin {
+    0% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px)
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
